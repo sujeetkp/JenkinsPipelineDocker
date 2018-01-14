@@ -1,9 +1,7 @@
 pipeline {
     agent {
-        docker{
-          image 'ubuntu'
+        dockerfile{
           label 'slave'
-          args '--name UbuntuContainer'
         }
     }
 
