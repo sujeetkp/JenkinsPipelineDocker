@@ -23,6 +23,7 @@ pipeline {
         stage('Deploy') {
             steps {
                sh 'echo Deploy'
+               sh 'cat /var/www/html/index.html'
             }
         }
     }
